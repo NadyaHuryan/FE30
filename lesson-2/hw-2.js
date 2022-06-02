@@ -6,9 +6,14 @@
     let sum = x + y + z;
     console.log(`Сумма: ${sum}`);
 }
-    // Task 2
+    // Task 2 @ Типа так просто не до конца понял ДЗ 2
 {
-    
+    let str = 'Привет';
+    let sum = 123;
+    let num = 15.8;
+    let flag = true;
+    let txt = 'text';
+    console.log(typeof(str), typeof(sum), typeof(num), typeof(flag), typeof(txt),);
 }
     // Task 3
 {
@@ -69,6 +74,12 @@
 }
 //Task 7
 {   
+    let boolean = true;
+    let str = 'just string';
+    let num = 1900;
+    console.log(`%variable%:${boolean} %Type%:${typeof(boolean)}`);
+    console.log(`%variable%:${str} %Type%:${typeof(str)}`);
+    console.log(`%variable%:${num} %Type%:${typeof(num)}`);
 }
 //Task 8
 {
