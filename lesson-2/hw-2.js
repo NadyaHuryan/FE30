@@ -110,6 +110,12 @@ console.log ( typeof(a16));
 console.log ( typeof(a17));
 console.log ( typeof(a18));
 
+// Task 1
+    let aA = 4;
+    let bB = 3;
+    aA = bB++;
+    console.log (aA, bB);
+
 // Task 2
 let codeWord1 = "обернись";
 let codeWord2 = "неужели";
