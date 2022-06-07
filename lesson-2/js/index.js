@@ -81,40 +81,60 @@
 
 // task 9
 
-let a1 = 3 % 5;
-let a2 = 5 + "3";
-let a3 = '5' – 3;  // num ?
-let a4 = 75 + "кг";
-let a5 = 785 * 653;
-let a6 = 100 / 25;
-let a7 = 0 * 0;
-let a8 = 0 / 2;
-let a9 = 89 / 0;
-let a10 = 98 + 2;
-// let a11 = 5 – 98; // num
-let a12 = (8 + 56 * 4) / 5;
-let a13 = ((9 - 12) * 7) / (5 + 2);
-let a14 = +"123"; // num
-let a15 = 1 || 0;
-let a16 = false || true; // B
-let a17 = true > 0; //B
-let a18 = 5 % 3;
+// let a1 = 3 % 5;
+// let a2 = 5 + "3";
+// // let a3 = '5' – 3;  // num ?
+// let a4 = 75 + "кг";
+// let a5 = 785 * 653;
+// let a6 = 100 / 25;
+// let a7 = 0 * 0;
+// let a8 = 0 / 2;
+// let a9 = 89 / 0;
+// let a10 = 98 + 2;
+// // let a11 = 5 – 98; // num
+// let a12 = (8 + 56 * 4) / 5;
+// let a13 = ((9 - 12) * 7) / (5 + 2);
+// let a14 = +"123"; // num
+// let a15 = 1 || 0;
+// let a16 = false || true; // B
+// let a17 = true > 0; //B
+// let a18 = 5 % 3;
 
-console.log(typeof a1);
-console.log(typeof a2);
-console.log(typeof a3);
-console.log(typeof a4);
-console.log(typeof a5);
-console.log(typeof a6);
-console.log(typeof a7);
-console.log(typeof a8);
-console.log(typeof a9);
-console.log(typeof a10);
-console.log(typeof a11);
-console.log(typeof a12);
-console.log(typeof a13);
-console.log(typeof a14);
-console.log(typeof a15);
-console.log(typeof a16);
-console.log(typeof a17);
-console.log(typeof a18);
+// console.log(typeof a1);
+// console.log(typeof a2);
+// console.log(typeof a3);
+// console.log(typeof a4);
+// console.log(typeof a5);
+// console.log(typeof a6);
+// console.log(typeof a7);
+// console.log(typeof a8);
+// console.log(typeof a9);
+// console.log(typeof a10);
+// console.log(typeof a11);
+// console.log(typeof a12);
+// console.log(typeof a13);
+// console.log(typeof a14);
+// console.log(typeof a15);
+// console.log(typeof a16);
+// console.log(typeof a17);
+// console.log(typeof a18);
+
+// ADVANCED level
+
+
+//task 1 
+let a = 4;
+let b = 3;
+[a, b] = [b, a]; // меняем значение переменных между собой
+console.log(b);
+
+
+//task 2 
+
+let codeWord1 = "обернись";
+let codeWord2 = "неужели";
+let codeWord3 = "огурцы";
+let codeWord4 = "липкие";
+let codeWord5 = "?!";
+
+let cipher = 
