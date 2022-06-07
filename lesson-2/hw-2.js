@@ -33,10 +33,10 @@ console.log (myAgeInSeconds);
 //  Task 4 
 let count = 42,
     userName = '42',
-    countStr = ''+42,
-    countStr2 = String(42),
-    userNameNum = Number('42'),
-    userNameNum2 = +'42';
+    countStr = '' + count,
+    countStr2 = String(count),
+    userNameNum = Number(userName),
+    userNameNum2 = +userName;
 
 // Task 5
 let a = 1,
@@ -71,7 +71,7 @@ let yourAge = prompt ('Сколько вам лет?');
 
 console.log (
 `Ваше имя: ${yourName}, 
-Ваш возраст: ${yourAge}.`);
+Ваш возраст: ${+yourAge}.`);
 
 // Task 9
 let a1 = 5 % 3,
@@ -112,12 +112,6 @@ console.log ( typeof(a15));
 console.log ( typeof(a16));
 console.log ( typeof(a17));
 console.log ( typeof(a18));
-
-// Task 1
-    let aA = 4;
-    let bB = 3;
-    aA = bB++;
-    console.log (aA, bB);
 
 // Task 2
 let codeWord1 = "обернись";
