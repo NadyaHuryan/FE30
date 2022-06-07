@@ -19,13 +19,16 @@
 
 //  Task 3
 
-const min = 1,
-    sec = min * 60,
-    hour = min / 60,
-    day = hour / 24,
-    year = day / 365;
+const min = 60,
+    sec = 60,
+    hour = 60,
+    day = 24,
+    year = 365, 
+    myAge = 20;
+    
 
-let myAgeInSeconds = 175200;
+let myAgeInSeconds = 20 * year * day * hour * min * sec ;
+console.log (myAgeInSeconds);
 
 //  Task 4 
 let count = 42,
