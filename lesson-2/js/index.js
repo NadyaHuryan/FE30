@@ -121,20 +121,20 @@
 
 // ADVANCED level
 
+//task 1
+// let a = 4;
+// let b = 3;
+// [a, b] = [b, a]; // меняем значение переменных между собой
+// console.log(b);
 
-//task 1 
-let a = 4;
-let b = 3;
-[a, b] = [b, a]; // меняем значение переменных между собой
-console.log(b);
+//task 2
 
+// let codeWord1 = "обернись";
+// let codeWord2 = "неужели";
+// let codeWord3 = "огурцы";
+// let codeWord4 = "липкие";
+// let codeWord5 = "?!";
 
-//task 2 
-
-let codeWord1 = "обернись";
-let codeWord2 = "неужели";
-let codeWord3 = "огурцы";
-let codeWord4 = "липкие";
-let codeWord5 = "?!";
-
-let cipher = 
+// let cipher =
+//   codeWord1[1] + codeWord2[1] + codeWord3[1] + codeWord4[1] + codeWord5;
+// console.log(cipher);
