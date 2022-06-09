@@ -19,8 +19,8 @@ let minInHour = 60;
 let hoursInDay = 24;
 let daysInYear = 365;
 let myAge = 25;
-console.log(myAge*daysInYear*hoursInDay*minInHour*secInMin);
 let myAgeInSeconds = (myAge*daysInYear*hoursInDay*minInHour*secInMin);
+console.log(myAgeInSeconds);
 
 let count = 42;
 let userName = '42';
@@ -31,7 +31,7 @@ console.log(typeof num.toPrecision(count));
 
 let a = 1;
 let b = 2;
-let c = "белых медведей";
+let c = " белых медведей";
 console.log(String(a)+String(b)+c);
 
 let access = "доступ";
@@ -39,7 +39,7 @@ let soldier = "морпех";
 let ice = "наледь";
 let transverse = "попрек";
 let axe = "рубило";
-let lengthWords = (access.length + soldier.length + ice.length + transverse.length + axe.length);
+let lengthWords = access.length + soldier.length + ice.length + transverse.length + axe.length;
 console.log(lengthWords);
 
 let first = `Variable: %variable name% have type: %type variable%`;
@@ -53,7 +53,7 @@ console.log(third);
 let fullName = prompt('Ваше имя?');
 let years = prompt('Сколько вам лет?');
 console.log(fullName);
-console.log(years);
+console.log(+years);
 
 let a1 = 3 % 5;
 let a2 = 5 + '3';
