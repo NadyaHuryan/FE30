@@ -23,7 +23,8 @@ let secondInMinute = 60,
 console.log(myAgeInSeconds)
 
 let count = 42
-count = String(count); /*изменил тип на строку, 2й я смог реализовать только "одев" 42 в '' */
+count = String(count); /*изменил тип на строку */
+count = `${count}` /*изменил тип на строку 2й способ */
 console.log(typeof(count));
 
 let userName = '42' * 1 //изменил тип на число 1-й способ
@@ -33,7 +34,8 @@ console.log(typeof(userName))
 let a = 1
 let b = 2
 let c = "белых медведей"
-let d = (a + (b + " " + c)) //добавил пробел как одно из слагаемых. Правильно ли так?
+    //let d = (a + (b + " " + c)) //добавил пробел как одно из слагаемых. Правильно ли так?
+let d = `${a}${b} ${c}`
 console.log(d)
 
 
