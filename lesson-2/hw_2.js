@@ -21,7 +21,8 @@
     let MinInHour = 60;
     let HourInDay = 24;
     let DayInYear = 365;
-    let myAgeInSeconds = 18 * DayInYear * HourInDay * MinInHour * SecInMin;
+    let myAge = 18;
+    let myAgeInSeconds = myAge * DayInYear * HourInDay * MinInHour * SecInMin;
     console.log(myAgeInSeconds);
 
     // Task 4
