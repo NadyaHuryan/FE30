@@ -2,9 +2,7 @@
     let x = 20;
     let y = 58;
     let z = 42;
-    console.log(x);
-    console.log(y);
-    console.log(x);
+    console.log(x + y + z);
 
     // Task 2
     let str = "Привет";
