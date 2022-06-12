@@ -2,9 +2,7 @@
     let x = 20;
     let y = 58;
     let z = 42;
-    console.log(x);
-    console.log(y);
-    console.log(x);
+    console.log(x + y + z);
 
     // Task 2
     let str = "Привет";
@@ -23,7 +21,8 @@
     let MinInHour = 60;
     let HourInDay = 24;
     let DayInYear = 365;
-    let myAgeInSeconds = 18 * DayInYear * HourInDay * MinInHour * SecInMin;
+    let myAge = 18;
+    let myAgeInSeconds = myAge * DayInYear * HourInDay * MinInHour * SecInMin;
     console.log(myAgeInSeconds);
 
     // Task 4
