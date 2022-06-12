@@ -5,12 +5,16 @@
 // console.log(x + y + z);
 
 // //  task 2
-// // Определите переменные
-// console.log(typeof "Привет");
-// console.log(typeof 123);
-// console.log(typeof 15.8);
-// console.log(typeof true);
-// console.log(typeof "true");
+// let a = "Привет";
+// let b = 123;
+// let c = 15.8;
+// let d = true;
+// let y = "true";
+// console.log(typeof a);
+// console.log(typeof b);
+// console.log(typeof c);
+// console.log(typeof d);
+// console.log(typeof y);
 
 // // task 3
 
@@ -19,12 +23,11 @@
 // let hoursAndDay = 24;
 // let dayAndYear = 365;
 
-// // a = secondAndMinute * minuteAndHour;
-// // b = hoursAndDay * dayAndYear;
-// // c = a * b;
-// // y = c * 34;
-// // console.log("myAgeInSeconds=" + y);
-// //console.log(typeof c) проверка переменной на ее значание srt. num и тд.
+// a = secondAndMinute * minuteAndHour;
+// b = hoursAndDay * dayAndYear;
+// c = a * b;
+// y = c * 34;
+// console.log("myAgeInSeconds=" + y);
 
 // // task 4
 
