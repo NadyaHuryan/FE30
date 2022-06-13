@@ -20,7 +20,7 @@ const amountSecInMin = 60,
     amountHourInDay = 24,
     amountDatInyear = 365;
 let myAge = 26;
-let myAgeInSeconds = amountSecInMin * amountMinInHour * amountHourInDay * amountDatInyear;
+let myAgeInSeconds = myAge * amountSecInMin * amountMinInHour * amountHourInDay * amountDatInyear;
 console.log(myAgeInSeconds);
 
 // #### Task 4 💻
@@ -78,7 +78,7 @@ let a14 = +"123";
 let a15 = 1 || 0;
 let a16 = false || true;
 let a17 = true > 0.
-console.log(typeof (a1), typeof (a2), typeof (a3), typeof (a4), typeof (a5), typeof (a6), typeof (a7), typeof (a8), typeof (a9), typeof (a10), typeof (a11), typeof (a12), typeof (a13), typeof (a14), typeof (a15), typeof (a16), typeof (a17));
+console.log('переменная a1:', typeof (a1), 'переменная a2:', typeof (a2), 'переменная a3:', typeof (a3), 'переменная a4:', typeof (a4), 'переменная a5:', typeof (a5), 'переменная a6:',  typeof (a6), 'переменная a7:', typeof (a7), 'переменная a8:', typeof (a8), 'переменная a9:', typeof (a9), 'переменная a10:', typeof (a10), 'переменная a11:', typeof (a11), 'переменная a12:', typeof (a12), 'переменная a13:', typeof (a13), 'переменная a14:', typeof (a14), 'переменная a15:', typeof (a15), 'переменная a16:', typeof (a16), 'переменная a17:', typeof (a17));
 
 // #### Task 9 💻 
 let x1 = 4;
