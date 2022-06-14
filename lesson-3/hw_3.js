@@ -79,3 +79,44 @@ switch (direction) {
         console.log ("Введите направление корректно")
         break;
 }
+
+//ADVANCED level
+
+//Task 1
+let n = 0,
+    sumN = 0;
+for (i = 0; ;i++) {
+    n = +prompt ("Введите число");
+    sumN = sumN + n;
+    if (isNaN (n)) {
+        alert ("Ошибка ввода");
+        break;
+    } else if (n == (0 || "")) {
+        alert (`Сумма чисел ${sumN}, среднее арифметическое чисел ${sumN / i}`);
+        break;
+    } else {
+        continue;
+    }
+}
+
+//Task 2
+let a = +prompt ("Введите число!"),
+    b = +prompt ("Сколько отнять от введенного числа?"),
+    c = +prompt ("Сколько прибавить к предыдущему результату?"),
+    d = +prompt ("На сколько умножить предыдущий результат?"),
+    e = +prompt ("На сколько разделить предыдущий результат?");
+//let result = (((a - b) + c) * d) / e; при такой записи выдает ошибку
+let result = a - b;
+result = result + c;
+result = result * d;
+result = result / e;
+alert (`Расчет выполнен по формуле (((a - b) + c) * d) / e = result, получено (((${a} - ${b}) + ${c}) * ${d}) / ${e} = ${result}`);
+
+//Task 3
+let stairs = "",
+    lattice = "#";
+confirm ("Построить лесенку?");
+for (i=1; i<=6; i++) {
+    stairs = stairs + lattice;
+    document.write (`${stairs} </br>`);
+}
