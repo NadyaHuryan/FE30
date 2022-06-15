@@ -16,7 +16,7 @@
 + Добавьте файл `hw_1.js`
 + Добавьте туда `console.log('Hello World!')`
 + Затем используя команду `git add .` внесите изменения в индекс
-+ Не забудем оставить комментарий к сохранению и напишем `git commit -m 'init(hw_1): start course Javascript Basic'`
++ Не забудем оставить комментарий к сохранению и напишем ``git commit -m 'init(hw_1): start course Javascript Basic'` start course Javascript Basic'`
 + Наконец отправим изменения на **github** с помощью команды `git push -u origin ivan.ivanov-hw_1`
 
 + Перейдите на сайт github и зайдите в ветку `ivan.ivanov-hw_1`
