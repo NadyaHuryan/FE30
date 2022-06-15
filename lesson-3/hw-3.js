@@ -92,3 +92,25 @@ if (userAge >= 18) {
     console.log('Доступ запрещен');
 } 
 // Task 7
+let userAnswer = prompt('В какую сторону света хочешь отпраиться', 'восток');
+switch (userAnswer) {
+    case 'восток':
+    case 'Восток':
+        console.log('на восток пойдешь разработчиком станешь');
+        break;
+    case 'запад':
+    case 'Запад':
+        console.log('на запад пойдешь верного друга найдешь');
+        break;
+    case 'север':
+    case 'Север':
+        console.log('на север пойдешь много денег найдешь');
+        break;
+    case 'юг':
+    case 'Юг':
+        console.log('на юг пойдешь счастье найдешь');
+        break;
+    default: 
+        console.log('Введите корректные данные');
+        break;
+}
