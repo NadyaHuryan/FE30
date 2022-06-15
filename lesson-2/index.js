@@ -22,14 +22,18 @@ let secondInMinute = 60,
     myAgeInSeconds = (secondInMinute * minuteInHour * hourInDay * dayInYear * myAge);
 console.log(myAgeInSeconds)
 
-let count = 42
-count = String(count); /*изменил тип на строку */
-count = `${count}` /*изменил тип на строку 2й способ */
-console.log(typeof(count));
+let count1 = 42
+count1 = String(count1); /*изменил тип на строку */
+console.log(typeof(count1));
+let count2 = 42
+count2 = `${count2}` /*изменил тип на строку 2й способ */
+console.log(typeof(count2));
 
-let userName = '42' * 1 //изменил тип на число 1-й способ
-userName = Number(userName); //изменил на число 2-й способ
-console.log(typeof(userName))
+let userName1 = '42' * 1 //изменил тип на число 1-й способ
+console.log(typeof(userName1))
+let userName2 = '42'
+userName2 = Number(userName2); //изменил на число 2-й способ
+console.log(typeof(userName2))
 
 let a = 1
 let b = 2
@@ -47,20 +51,13 @@ let I = "рубило"
 let lengthWords = A + B + C + D + I
 console.log(lengthWords.length);
 
-let type1 = "Variable: %variable name% have type: %type variable%"
-console.log(type1)
-console.log(typeof(type1));
-let type2 = ["Variable: %variable name% have type: %type variable%"]
-console.log(type2)
-console.log(typeof(type2));
-let type3 = "Variable: % variable name % have type: % type variable %"
-if (type3 < 1) {
-    greeting = "Variable: %variable name% have type: %type variable%";
-} else {
-    greeting = "Variable: %variable name% have type: %type variable%"
-}
-console.log(type3)
-console.log(typeof(type3 < 18));
+let type1 = 'text';
+let type2 = 30;
+let type3 = true;
+console.log('Variable: ' + type1 + ' have type: ' + typeof(type1));
+console.log('Variable: ' + type2 + ' have type: ' + typeof(type2));
+console.log('Variable: ' + type3 + ' have type: ' + typeof(type3));
+
 
 
 let name = prompt("Как вас зовут?"),
