@@ -88,24 +88,45 @@ switch (direction) {
 // #### Task 1 👨‍🏫
 let enterNumber = 1;
 let sum2 = 0;
-for (i = 0; enterNumber; i++) {
+for (i = 1; enterNumber; i++) {
     enterNumber = +prompt('введите число');
     sum2 += enterNumber;
     if (isNaN(enterNumber)) {
         console.log('ошибка ввода')
+        document.write('ошибка ввода');
     } else {
-        console.log(`общая сумма ${sum2}, среднее арифметическое ${sum2 / (i - 1)}`)
+        console.log(`общая сумма ${sum2}, среднее арифметическое ${sum2 / i}`)
+        document.write(`общая сумма ${sum2}, среднее арифметическое ${sum2 / i} `);
     }
 }
 
 // #### Task 2 👨‍🏫 
+let minus, plus, multiplication, share, result1;
 let number3 = +prompt('введите число');
-let minus = +prompt('сколько отнять?');
-let plus = +prompt('сколько прибавить?')
-let multiplication = +prompt('на сколько умножить?');
-let share = +prompt('на сколько разделить?');
-let result1 = `((((${number3} - ${minus})+${plus})*${multiplication})/${share}) = ${(number3 - minus + plus) * multiplication / share}`;
-alert(result1);
+if (!(isNaN(number3))) {
+    minus = +prompt('сколько отнять?');
+}
+if (!(isNaN(minus))) {
+    plus = +prompt('сколько прибавить?');
+}
+if (!(isNaN(plus))) {
+    multiplication = +prompt('на сколько умножить?');
+}
+if (!(isNaN(multiplication))) {
+    share = +prompt('на сколько разделить? ');
+}
+if (share) {
+    result1 = `${(number3 - minus + plus) * multiplication / share}`;
+    if (isNaN(result1)) {
+        alert('вы ввели не  все значения')
+    } else {
+        alert(`((((${number3} - ${minus})+${plus})*${multiplication})/${share}) = ${result1}`);
+        console.log(`((((${number3} - ${minus})+${plus})*${multiplication})/${share}) = ${result1}`);
+        document.write('</br>' + `((((${number3} - ${minus})+${plus})*${multiplication})/${share}) = ${result1}` + '</br>');
+    }
+} else if (share == 0) {
+    alert('на 0 делить нельзя')
+}
 
 // #### Task 3 👨‍🏫
 let ij;
@@ -113,6 +134,7 @@ let grid = '';
 let onegrid = '#'
 do {
     ij = confirm('нажмите ок, если хотите рисовать лестницу');
-    grid += onegrid
-    console.log(grid)
+    grid += onegrid;
+    console.log(grid);
+    document.write(grid + '</br>');
 } while (ij)
