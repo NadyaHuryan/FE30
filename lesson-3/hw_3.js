@@ -7,7 +7,8 @@ if (height > width) {
 }
 
 // Task 2
-let sum = 0;
+let num, 
+    sum = 0;
 for (num = 1; num <= 5; num++) {
     sum = sum + num;
     console.log (`${num} сумма чисел ${sum}`);
@@ -50,12 +51,13 @@ if (a%3 == 0 && a%5 == 0) {
 
 // Task 6
 let b = +prompt('Введите Ваш возраст');
-if (b == 16 || b == 17 || b == 18) {
-    alert('Уже почти');
-} else if (b > 18) {
+if (b >= 18) {
     alert('Доступ разрешен');
 } else {
     alert('Доступ запрещен');
+    if (b >= 16) {
+        alert('Уже почти');
+    }
 }
 
 // Task 7
@@ -77,5 +79,23 @@ switch(sideOfTheWorld) {
         console.log("Введите корректное значение");
         break;
 }
+
+// ADVANCED level
+// Task 1
+let sum1 = 0, n = 0;
+while (true) {
+    let variable = +prompt('Введите число');
+    if (variable != 0) {
+        if (isNaN(variable)) {
+            alert('Необходимо ввести число');
+        } else {
+            sum1 += variable;
+            n++;
+        }
+    } else {break;}
+}
+alert(`Сумма ${sum1}, среднее арифметическое ${sum1/n}`);
+
+
 
 
