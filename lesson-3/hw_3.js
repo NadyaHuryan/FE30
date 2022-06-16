@@ -5,15 +5,17 @@
     let width = 20;
     if (height > width) {
         console.log("Высота" + " - " + height);
-    } else {
+    } else if (height < width) {
         console.log("Ширина" + " - " + width);
+    } else {
+    console.log("Ширина = высота" + " = " + width);
     }
 
     // Task 2
-    sum = 0;
-    i = 0;
-    for (i = 1; i <= 5; i++) {
-        sum = sum + i;
+    let sum = 0;
+    let a = 0;
+    for (a = 1; ia <= 5; a++) {
+        sum = sum + a;
         console.log(`В числе ${i} сумма составляет ${sum}`);
     }
 
@@ -40,19 +42,19 @@
 
     // Task 5 
     let numUser = +prompt("Введите число: ");
-    if (numUser % 5 == 0) {
+    if (numUser % 5 == 0 && numUser % 3 == 0) {
+        alert("FizBuz");
+    } else if (numUser % 5 == 0) {
         alert("Fiz");
     } else if (numUser % 3 == 0) {
         alert("Buz");
-    } else if (numUser % 5 == 0 && numUser % 3 == 0) {
-        alert("FizBuz");
     } else {
         alert("Error");
     }
 
     // Task 6
     let ageUser = +prompt("Сколько вам лет?");
-    if (ageUser < 16) {
+    if (ageUser < 18) {
         alert("Доступ запрещен");
     } else if (ageUser => 16 && ageUser <= 18) {
         alert("Уже почти");
@@ -83,21 +85,20 @@
     // Advanced level
 
     // Task 1
+    let i = 0;
     let sumTotal = 0;
-    for (i = 0; ;i++) {
-        numVisitor = +prompt ("Введите число: ");
-        sumTotal = sumTotal + numVisitor;
-    if (isNaN (numVisitor)) {
+    let numVisitor = +prompt ("Введите число: "); 
+    if (isNaN (numVisitor)){
         alert ("Ошибка ввода");
-        break;
-    } else if (numVisitor == (0 || '')) {
-        alert (`Общая сумма чисел: ${sumTotal}
-Среднее арифметическое чисел: ${sumTotal / i}`);
-        break;
     } else {
-        continue;
-    }
-}
+    while ((numVisitor != 0) && (numVisitor != null) && (numVisitor != NaN)) {
+        sumTotal = sumTotal + numVisitor;
+        numVisitor = +prompt ("Введите число: ");
+        i++;
+    } 
+    alert( "Сумма чисел: " + sumTotal);         
+    alert( "Среднее арифметическое: " + (sumTotal/i));    
+    } 
 
     // Task 2 
     let num = +prompt("Введите число: ");
@@ -105,10 +106,7 @@
     let numB = +prompt("Сколько прибавить к предыдущему результату: ");
     let numC = +prompt("На сколько умножить предыдущий результат: ");
     let numD = +prompt("На сколько разделить предыдущий результат: ");
-    let numDifference = num - numA;
-    let numSum = numDifference + numB;
-    let numMultiplication = numSum * numC;
-    let numResult = numMultiplication / numD;
+    let numResult = ((num - numA + numB) * numC) / numD;
     alert(`(((( ${num}  - ${numA} ) + ${numB}) * ${numC}) / ${numD} = ${numResult})`);
 
     // Task 3
