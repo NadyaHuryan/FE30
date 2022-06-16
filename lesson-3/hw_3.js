@@ -91,7 +91,7 @@
     if (isNaN (numVisitor)){
         alert ("Ошибка ввода");
     } else {
-    while ((numVisitor != 0) && (numVisitor != null) && (numVisitor != NaN)) {
+    while ((numVisitor != 0) && (numVisitor != null)) {
         sumTotal = sumTotal + numVisitor;
         numVisitor = +prompt ("Введите число: ");
         i++;
