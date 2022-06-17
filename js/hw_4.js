@@ -17,7 +17,7 @@ const countCredit = function (sum, years) {
 let amount = countCredit(+prompt('введите сумму кредита'), +prompt('введите количество лет возврата'));
 console.log(amount);
 
-// #### Task 3 💻 
+// #### Task 3 💻
 let stringLength1 = prompt('введите строку');
 let trimFirst = +prompt('введите параметр в ввиде числа, с которого вы бы хотеле обрезать введённую выше строку', '0');
 let trimSecond = +prompt('введите параметр в ввиде числа, по которое вы бы хотеле обрезать введённую выше строку', '2');
@@ -39,3 +39,57 @@ const getSumNumbers = function (figure) {
 let result4 = getSumNumbers(prompt('введите число'));
 console.log(result4);
 
+#### Task 5 💻
+let sum5 = 0;
+const getSum5 = function (a, b) {
+    if (a !== b) {
+        if (a > b) {
+            for (; b <= a; b++) {
+                sum5 += b;
+            }
+        } else if (a < b) {
+            for (; a <= b; a++) {
+                sum5 += a;
+            }
+        }
+    } else {
+        sum5 = a;
+    }
+    return sum5;
+}
+let keepGetSum5 = getSum5(+prompt('введите число'), +prompt('введите число'));
+alert(keepGetSum5);
+
+#### Task 6 💻(Изучить как передавать функцию в качестве параметра)
+
+const foo = function() {
+    console.log('foo')
+}
+const boo = function() {
+    console.log('boo')
+}
+let pox;
+const getFooBoo = function(firstOption, secondOption, bool) {
+    bool = confirm('если ок то фуу, если нет то буу')
+    if (bool) {
+        firstOption()
+    } else {
+        secondOption()
+    }
+}
+getFooBoo(foo, boo, pox)
+
+// ### ADVANCED level
+
+// #### Task 1 👨‍🏫 
+let firstSide = +prompt('введите первую сторону треугольника');
+let secondSide = +prompt('введите первую сторону треугольника');
+let thirdSide = +prompt('введите первую сторону треугольника');
+const checkBuiltTriangle = function(a,b,c) {
+    if ((a+b> c) && (b+c > a) && (a+c > b)) {
+        alert('треугольник можно построить')
+    } else {
+        alert('построить треугольник невозможно')
+    }
+}
+checkBuiltTriangle(firstSide, secondSide, thirdSide)
