@@ -1,9 +1,12 @@
-    let height = 15;
+    let height = 20;
     let width = 20;
     if (width > height) {
         console.log("ширина"+" = "+width);
-    } else {
+    } else if (width < height) {
         console.log("длина"+" = "+height);
+    }
+    else {
+    console.log("ширина"+" = "+width, "длина"+" = "+height);
     }
 
     //task 2
@@ -36,8 +39,8 @@
 
     //Task 5 
 
-    let yourNumber = prompt("Введите число");
-    if(yourNumber % 5 == 0 & yourNumber % 3 == 0) {
+    let yourNumber = +prompt("Введите число");
+    if(yourNumber % 5 == 0 && yourNumber % 3 == 0) {
         console.log("FizBuz");
     } else if(yourNumber % 3 == 0) {
         console.log("Buz");
@@ -48,15 +51,17 @@
     }
 
     //Task 6
-    let yourAge = prompt("Введите ваш возраст");
-    if(yourAge == 16, yourAge == 17) {
-        console.log("Уже почти");
-    } else if(yourAge < 18) {
-        console.log("Доступ запрещен");
-    } else if(yourAge >= 18) {
-        console.log("Доступ разрешен");
-    } else{
-        console.log("Введите число");
+    let yourAge = +prompt("Введите ваш возраст");
+    if (yourAge >= 18) {
+    alert("Доступ разрешен");
+    }
+    else if(yourAge < 18){
+        alert("Доступ запрещен");
+        if(yourAge == 16 || yourAge == 17){
+            alert("уже почти");
+        }
+    } else {
+        alert("Введите число");
     }
 
     //Task 7
@@ -80,7 +85,19 @@
     }
 
     //Task 8 
-
+        let summ = 0, n = 0;
+    while (true) {
+        let num = +prompt("Введите число");
+        if (num != 0) {
+            if(isNaN(num)){
+                alert("введите число");
+            } else {
+                summ += num;
+                n++;
+            }
+        } else {break};
+    }
+    document.write("общая сумма = " + summ + " " + "среднее арифмитическое = " + summ/n);
 
 
     //Task 9 
@@ -89,7 +106,14 @@
         c = +prompt("cколько прибавить?"),
         d = +prompt("cколько умножить?"),
         e = +prompt("cколько разделить?");
-    alert("Формула - ((((a - b) + c) * d) / e), результат = " + (((a - b) + c) * d) / 2);
+    alert("Формула - ((((a - b) + c) * d) / e), результат = " + (((a - b) + c) * d) / e);
 
 
     //Task 10
+
+    let xmasTree = prompt("Насколько высокую ёлочку вы хотите ?");
+    let brick = "#";
+    for(i=1; i<=xmasTree; i++){
+        brick += "#";
+        document.write(brick+"<br>");
+    }
