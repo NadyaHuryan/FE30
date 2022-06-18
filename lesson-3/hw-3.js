@@ -108,7 +108,39 @@ switch (userAnswer) {
 // let tSum = userInfo1 + userInfo2;
 // console.log(`ариф сумм: ${aSum}, общ сумм: ${tSum}`);
 // }
-
+// {
+//     let userNum = true;
+//     let sum = 0;
+//     let i = 0;
+//     while (userNum != '' || userNum != 0) {
+//         userNum = +prompt('введите число');
+//         if (isNaN(userNum)) {
+//             alert('Это не число прошу ввести число')
+//         } else {
+//             sum += userNum;
+//             i++;
+//         }
+//     }
+//     alert ('Общая сумма:' + sum);
+//     alert ('Среднее число:' + (sum / i));
+// }
+{
+let sum = 0;
+let i = 0;
+while (true) {
+    let num = +prompt('введите число');
+    if (num) {
+        if (isNaN(num)) {
+            alert('Введите число');
+        } else {
+            sum += num;
+            i++;
+        } 
+    } else {break};
+}
+    alert ('Общая сумма:' + sum);
+    alert ('Среднее число:' + (sum / i));
+}
 //task2
 {
 let userInfo = +prompt ('Введите число');
