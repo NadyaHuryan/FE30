@@ -14,10 +14,9 @@ let result = (height > width) ? console.log(`height больше: ${height} че
 // Task2
 // method 1
 let sum = 0;
-for (let i = 0; i <= 5; i++) {
-    sum += i;
+for (let i = 0; i <= 5; ++i) {
+    console.log (sum += i);
 }
-console.log(sum);
 
 
 // Task 3
