@@ -27,9 +27,7 @@ userName1 = +'42';
 userName2 = Number(userName);
 
 let a = 1, b = 2, c = "белых медведей";
-let aSTR = String(a);
-let abc = aSTR + b + c;
-console.log(abc);
+console.log(""+a+b+" "+c);
 
 let txt1 = 'доступ', txt2 = 'морпех', txt3 = 'наледь', txt4 = 'попрек', txt5 = 'рубило';
 let lengthWords = txt1 + txt2 + txt3 + txt4 + txt5;
@@ -99,6 +97,8 @@ console.log(a17 , typeof(a17));
 let num34 = true, num35 = 0;
 let a18 = num34 > num35;
 console.log(a18 , typeof(a18));
+
+
 
 
 
