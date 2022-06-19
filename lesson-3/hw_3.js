@@ -3,7 +3,9 @@
 //Task 1
 let height = 15,
     width = 20;
-if (height > width) {
+if (height == width) {
+    console.log ("Высота и ширина равны" + " - " + height);
+} else if (height > width) {
     console.log ("Высота" + " - " + height);
 } else {
     console.log ("Ширина" + " - " + width);
@@ -19,7 +21,7 @@ for (i = 1; i <= 5; i++) {
 
 //Task 3
 for (i = 1; i <= 20; i++) {
-    if (i % 3 !== 0) {
+    if (i % 3 != 0) {
         continue;
     }
     console.log (i);
@@ -52,12 +54,13 @@ if (num % 3 == 0 && num % 5 == 0) {
 
 //Task 6
 let age = +prompt ("Введите Ваш возраст");
-if (age < 16) {
-    alert ("Доступ запрещен");
-} else if (age >= 16 && age < 18) {
-    alert ("Уже почти");
+if (age >= 18) {
+    console.log("Доступ разрешен")
 } else {
-    alert ("Доступ разрешен");
+    console.log("Доступ запрещен");
+    if (age>=16) {
+        console.log("Уже почти")
+    }
 }
 
 //Task 7
@@ -85,19 +88,20 @@ switch (direction) {
 //Task 1
 let n = 0,
     sumN = 0;
-for (i = 0; ;i++) {
+while (true) {
     n = +prompt ("Введите число");
-    sumN = sumN + n;
-    if (isNaN (n)) {
-        alert ("Ошибка ввода");
-        break;
-    } else if (n == (0 || "")) {
-        alert (`Сумма чисел ${sumN}, среднее арифметическое чисел ${sumN / i}`);
-        break;
+    if (n != 0) {
+        if (isNaN (n)) {
+            alert ("Ошибка ввода");
+        } else {
+            sumN = sumN + n;
+            i++;
+        }
     } else {
-        continue;
+        break;
     }
 }
+alert (`Сумма чисел ${sumN}, среднее арифметическое чисел ${sumN / i}`);
 
 //Task 2
 let a = +prompt ("Введите число!"),
@@ -105,11 +109,7 @@ let a = +prompt ("Введите число!"),
     c = +prompt ("Сколько прибавить к предыдущему результату?"),
     d = +prompt ("На сколько умножить предыдущий результат?"),
     e = +prompt ("На сколько разделить предыдущий результат?");
-//let result = (((a - b) + c) * d) / e; при такой записи выдает ошибку
-let result = a - b;
-result = result + c;
-result = result * d;
-result = result / e;
+let result = (((a - b) + c) * d) / e;
 alert (`Расчет выполнен по формуле (((a - b) + c) * d) / e = result, получено (((${a} - ${b}) + ${c}) * ${d}) / ${e} = ${result}`);
 
 //Task 3
