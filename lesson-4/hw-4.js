@@ -107,4 +107,30 @@ function fooboo(foo, boo) {
 }
 console.log(fooboo(true, true));
 
-// ad level 1
+// ad level
+//task 1
+{
+function triangle(a, b, c) {
+    if (a > 0 && b > 0 && c > 0) {
+        return `Треугольник можно построить: ${true}`
+    } else {return `Треугольник не сможешь построить: ${false}`}
+}
+console.log(triangle(1, 10, 20));
+}
+
+//task2
+function chocolatePiece(h, w) {
+    if(isNaN(h, w)) {
+        return `У вас нету шоколада`
+    } else {
+        if (h >= 1 && w >= 1) {
+            return (h * w) - 1;
+        }
+    }
+}
+console.log(chocolatePiece(3, 1));
+
+//task3
+{
+
+}
