@@ -16,7 +16,7 @@
 + Добавьте файл `hw_1.js`
 + Добавьте туда `console.log('Hello World!')`
 + Затем используя команду `git add .` внесите изменения в индекс
-+ Не забудем оставить комментарий к сохранению и напишем `git commit -m 'init(hw_1): start course Javascript Basic'`
++ Не забудем оставить комментарий к сохранению и напишем `(git commit -m 'init(hw_1): start course Javascript Basic)'`
 + Наконец отправим изменения на **github** с помощью команды `git push -u origin ivan.ivanov-hw_1`
 
 + Перейдите на сайт github и зайдите в ветку `ivan.ivanov-hw_1`
@@ -48,5 +48,5 @@
 + Не забыть вытянуть к себе на локальный репозиторий все изменения из вашей главной ветки `ivan.ivanov` удаленного репозитория при помощи команды `git pull origin ivan.ivanov`. Проверьте что вы остались на своей рабочей ветке
 + Переходим на ветку `git checkout main`. Делаем `git pull origin main` 
 + Переходим на свою ветку `git checkout ivan.ivanov`. Делаем `git merge main`
-+ Удаляем старую ветку `git branch -d ivan.ivanov-hw_1`
++ Удаляем старую ветку `git branch -D ivan.ivanov-hw_1`
 + Возвращаемся к пункту 14
